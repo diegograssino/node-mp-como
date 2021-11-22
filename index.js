@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Agrega credenciales
 mercadopago.configure({
   access_token:
-    'APP_USR-6623451607855904-111502-1f258ab308efb0fb26345a2912a3cfa5-672708410',
+    'TEST-6173196905390209-112022-5ff6193a8bb7de849d305917452b75e5-57744358',
 });
 
 //routes
@@ -41,6 +41,6 @@ app.post('/checkout', (req, res) => {
 
 //server
 
-app.listen(3000, () => {
-  console.log('Server on port 3000');
+app.listen(3001, () => {
+  console.log('Server on port 3001');
 });
